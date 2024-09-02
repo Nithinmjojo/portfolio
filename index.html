@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3788986dfa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+        <nav class="navdiv">
+            <div class="logo">
+                <p>Nithin</p>
+            </div>
+            <ul id="menulist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#links">Contact</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </nav>
+    
+
+<script>
+    let menulist = document.getElementById("menulist")
+    menulist.style.maxHeight = "0px";
+
+    function toggleMenu(){
+        if(menulist.style.maxHeight == "0px"){
+            menulist.style.maxHeight = "300px";
+        }
+        else{
+            menulist.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+    <div id="home" > 
+       <div class="image1">
+                <img class="heroimg" src="images/heroimg1.png" alt="illustration"> 
+            </div>
+         <div class="container1">
+                <h2 class="title">Hi I'm <span class="name">Nithin</span></h1>
+                <h2 class="subtitle">I'm a <span class="job">Web Developer</span></h2>
+                <h3 class="desc">I'm hooked on building cool stuff for the web. Let's create something awesome together.</h3>
+                <button onclick="window.location.href = '#contactform'" class="button">Let's connect</button>
+        </div>  
+             
+    </div>
+
+    <div id="about">
+        <h2 class="abouttxt">About me</h2>
+        <div></div><img class="img2" src="images/coding.gif" alt="">
+        <p class="desc2">
+            As a Web Developer, I am responsible for designing and developing web pages. 
+            My primary focus is to create responsive, user friendly experiences 
+            that meets the needs of a diverse audience.
+        </p>
+        <h3 class="myskills">My Skills</h3>
+        <div class="skilltab">
+            <div class="skill">
+                <img class="html" src="images/html.png" alt="html logo from icons8">
+                <h4>HTML</h4>
+            </div>
+            <div class=" skill">
+                <img class="css" src="images/css.png" alt="css logo image from icons8">
+                <h4>CSS</h4>
+            </div>
+            <div class ="skill">
+                <img class="js" src="images/js.png" alt="js logo from icons8">
+                <h4>JavaScript</h4>
+            </div>
+            <div class="skill">
+                <img class="python" src="images/python.png" alt="python logo from icons8">
+                <h4>Python</h4>
+            </div>
+            <div class="skill">
+                <img class="git" src="images/git.png" alt="git logo from icons8">
+                <h4>Git</h4>
+            </div>
+            <div class="skill">
+                <img class="figma" src="images/figma.png" alt="figma logo from icons8">
+                <h4>Figma</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <h2 class="projecttxt">Projects</h2>
+        <div class="projectsdiv">
+            <div class="project">
+                <img class="projectimg" src="images/portfolio.jpg" alt="image of the project">
+                <h4 class="projecttitle">
+                    Portfolio Website Using HTML,CSS and JavaScript
+                </h4>
+                <p class="projectdesc2">Developed a dynamic personal portfolio showcasing my skills and projects in web development. Designed it using Figma.
+                     Utilized HTML, CSS, and JavaScript to create an interactive and visually appealing website. 
+
+                </p>
+                <a href="https://github.com/Nithinmjojo/Portfolio-Website-1"><button class="vcbtn"><img src="images/github.png" alt="logo of github">View code</button></a>
+            </div>
+            <div class="project cvd">
+                <img class="projectimg" src="images/heart.jpg" alt="image of the project">
+                <h4 class="projecttitle">
+                    Cardio Vascular Disease detection using CNN and Transfer Learning
+                </h4>
+                <p class="projectdesc2">Leveraged the powerful VGG19 architecture to develop a highly accurate cardiovascular disease (CVD) detection system. 
+                    achieving an impressive 94.7% accuracy in classifying images into 6 classes.  </p>
+                <a href="https://github.com/Nithinmjojo/CVD-detection" target="_blank"><button class="vcbtn"><img src="images/github.png" alt="logo of github">View code</button></a>
+            </div>
+           
+            <div class="project net">
+                <img class="projectimg" src="images/netflix.jpg" alt="image of the project">
+                <h4 class="projecttitle">
+                    Netflix Clone app using HTML, CSS and Javascript
+                </h4>
+                <p class="projectdesc2">Created a functional and visually appealing clone of the popular streaming platform Netflix using HTML and CSS. 
+                    Replicated the key features and user interface of the original website. </p>
+                <a href=""><button class="vcbtn"><img src="images/github.png" alt="logo of github">View code</button></a>
+            </div>
+            <div class="project cc">
+                <img class="projectimg" src="images/creditcard.jpg" alt="image of the project">
+                <h4 class="projecttitle">
+                    Credit Card Fraud Detection using Data Science and ML
+                </h4>
+                <p class="projectdesc2">Developed a robust machine learning model to accurately detect fraudulent 
+                    transactions. Employed data science techniques to analyze large dataset, and create a model 
+                    capable of flagging suspicious transactions. </p>
+                <a href="https://github.com/Nithinmjojo/fraud-detection-project"><button class="vcbtn"><img src="images/github.png" alt="logo of github">View code</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="links">
+        
+        <div class="socials">
+            <h2 class="getit">Get in Touch</h2>
+            <div class="social">
+               <a href="https://www.linkedin.com/in/nithinmjojo/" target="_blank"><img src="images/linkedin.png" alt="linkedin logo from icons8"></a>
+                <h4 class="socialname">
+                    LinkedIn
+                </h4>
+            </div>
+            <div class="social">
+                <a href="https://github.com/Nithinmjojo" target="_blank"><img src="images/github.png" alt="github logo from icons8"></a>
+                <h4 class="socialname">
+                    Github
+                </h4>
+            </div>
+            <div class="social">
+                <a href="https://leetcode.com/u/Nithin_M_Jojo/" target="_blank"><img src="images/leetcode.png" alt="leetcode logo from icons8"></a>
+                <h4 class="socialname">
+                    Leetcode
+                </h4>
+            </div>
+            <div class="social">
+                <a href="mailto:nithinmjojo@gmail.com" target="_blank"><img src="images/gmail.png" alt="leetcode logo from icons8"></a>
+                <h4 class="socialname">
+                    GMail
+                </h4>
+            </div>
+        </div>
+        <div id="contactform">
+            <form  method="POST" id="form">
+                <input type="hidden" name="access_key" value="662441ec-77db-4f8d-8a8c-c249ec11233b">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Enter Your email" required>
+                <textarea type="text" name="message" id="message" placeholder="Enter your message" required></textarea>
+                <button class="button2">
+                    <div class="svg-wrapper-1">
+                      <div class="svg-wrapper">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="24"
+                          height="24"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z"></path>
+                          <path
+                            fill="currentColor"
+                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <span>Submit!</span>
+                  </button>
+                  <div id="result"></div>
+            </form>
+        </div>
+    </div>
+
+
+        <footer>
+            <p>Copyright © 2024 Nithin M Jojo</p>
+            <p>Made with ❤ </p>
+        </footer>
+        <script>
+            const form = document.getElementById('form');
+            const result = document.getElementById('result');
+            
+            form.addEventListener('submit', function(e) {
+                const formData = new FormData(form);
+                e.preventDefault();
+            
+                const object = Object.fromEntries(formData);
+                const json = JSON.stringify(object);
+            
+                result.innerHTML = "Please wait..."
+            
+                fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: json
+                    })
+                    .then(async (response) => {
+                        let json = await response.json();
+                        if (response.status == 200) {
+                            result.innerHTML = json.message;
+                        } else {
+                            console.log(response);
+                            result.innerHTML = json.message;
+                        }
+                    })
+                    .catch(error => {
+                        console.log(error);
+                        result.innerHTML = "Something went wrong!";
+                    })
+                    .then(function() {
+                        form.reset();
+                        setTimeout(() => {
+                            result.style.display = "none";
+                        }, 3000);
+                    });
+            });
+            </script>
+</body>
+</html>
