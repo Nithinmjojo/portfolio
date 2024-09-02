@@ -68,7 +68,7 @@ nav ul{
 }
 
 .title{
-    font-size: 5em;
+    font-size: 3em;
     font-family: "Rowdies",sans-serif; 
     padding: 0px;
 }
@@ -78,13 +78,13 @@ nav ul{
 }
 
 .subtitle{
-    font-size: 3em;
+    font-size: 2em;
     font-family: "Rowdies",sans-serif; 
 }
 .desc{
     font-family: "Rowdies",sans-serif;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 40px;
 }
 
@@ -203,7 +203,7 @@ nav ul{
 }
 
 .desc2{
-    font-size: 2em;
+    font-size: 1.5em;
     margin-right: 10%;  
     margin-left: 10%;
     font-weight: 300;
@@ -220,7 +220,7 @@ nav ul{
 
 
 .myskills{
-    font-size: 3em;
+    font-size: 2em;
     margin: 8% 4%;
     font-weight: 300;
     text-align: center;
@@ -339,7 +339,7 @@ h4{
 
 .project:hover{
   transition: all 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transform: scale(1.3);
+  transform: scale(1.1);
   box-shadow: 12px 10px 40px 10px #8121d071;
   -webkit-font-smoothing: subpixel-antialiased;
   backface-visibility: hidden;
